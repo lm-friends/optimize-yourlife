@@ -6,6 +6,12 @@
  
 # Returns the maximum value
 # with knapsack of W capacity
+
+'''
+This program deals even with unbounded knapsack using DP with a recursive formula this time. Just goes to prove that even 
+even beyond the 1/0 problem, its perfectly cromulent to use a classic CS approach. Very elegant code.
+However things will explode if n is large or the range of values allowed for each item is large
+'''
 def unboundedKnapsack(W, n, val, wt):
  
     # dp[i] is going to store maximum

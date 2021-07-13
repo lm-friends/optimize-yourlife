@@ -1,3 +1,12 @@
+#Author - John @ Last Mile but its just a few modifications from teh Google/OR example here
+#https://developers.google.com/optimization/mip/integer_opt
+'''
+This is when we start to get clever and use the optimization algorithms from Operations Research.
+Under the hood, the solvers reduce the solution space cleverly and reduce the order of complexity by a lot
+Another advantage is that you can start to express complex business problems in a manageable way. If we kept with 
+heuristics, the programs become very complex to manage corner cases
+'''
+
 from ortools.linear_solver import pywraplp
 import numpy as np
 def main():

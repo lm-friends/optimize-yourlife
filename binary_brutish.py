@@ -1,5 +1,12 @@
 
 #Author: John Curry - Last Mile
+
+'''
+This program just says Feck it! Generate every possible combination of items for the knapsack.
+Then just choose the best one that fits the constraints.  If the number of combos are small, its a perfectly
+cromulent solution
+'''
+
 import numpy as np
 import pandas as pd
 

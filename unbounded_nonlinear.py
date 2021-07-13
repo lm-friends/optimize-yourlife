@@ -3,9 +3,15 @@ from scipy.optimize import minimize
 
 #ref for inequality constraint example syntax https://stackoverflow.com/questions/21765794/python-constrained-non-linear-optimization
 
+'''
+This is scipy kicking Google ORs a**.  Not only does it handle the linear version, it also 
+handles a nonlinear objective function with ease.  There must be a downside somewhere. Maybe not 
+as performant at scale? But so far so good...
+'''
+
 def objective(x):
     #linear objective
-    return - ( np.dot(x, v) ) # x[1]*v[1] + ...x[n]*v[n]
+    # return - ( np.dot(x, v) ) # x[1]*v[1] + ...x[n]*v[n]
     
     #non linear objective
     return -( np.dot(x, v) + x[1]*v[1]*x[2]*v[2] )

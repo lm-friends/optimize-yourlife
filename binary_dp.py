@@ -1,6 +1,11 @@
 #Author - Sean Donohue - Last Mile
 #https://www.youtube.com/watch?v=cJ21moQpofY for explanation of dynamic programming for 0/1 knapsack
 #note that this is tabulated dynamic programming. could also do it recursively with or without memoization
+
+'''
+This program says hey, I'm a software engineer. While I dont want to mess with no linear programming, Im definitely not
+going to keep duplicating calculations.  I'll use a classic CS algo to reduce the order of complexity
+'''
 import numpy as np
 import pandas as pd
 
