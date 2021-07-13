@@ -13,9 +13,11 @@ And if the problem becomes non linear, thats OK too. You may still be able to so
 
 https://www.youtube.com/watch?v=gF8flc_a4D0&t=2s for a fuller explanation
 
+See https://www.lastmile-ai.com for more amazingness
+
 # Dependencies
 
-pip install numpy pandas ortools cvxopt
+pip install numpy pandas ortools scipy
 
 
 
