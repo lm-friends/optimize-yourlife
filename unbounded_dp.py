@@ -1,4 +1,5 @@
-
+#Author: Anant Agarwal on https://www.geeksforgeeks.org/unbounded-knapsack-repetition-items-allowed/
+# This code is contributed by .
 # Python3 program to find maximum
 # achievable value with a knapsack
 # of weight W and multiple instances allowed.
@@ -29,4 +30,3 @@ n = len(val)
  
 print(unboundedKnapsack(W, n, val, wt))
  
-# This code is contributed by Anant Agarwal.

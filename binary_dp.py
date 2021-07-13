@@ -1,8 +1,10 @@
+#Author - Sean Donohue - Last Mile
 #https://www.youtube.com/watch?v=cJ21moQpofY for explanation of dynamic programming for 0/1 knapsack
-#note that this is tabulated dynamic programming. can also do it recursively with or without memoization
+#note that this is tabulated dynamic programming. could also do it recursively with or without memoization
 import numpy as np
 import pandas as pd
 
+#Read parameters from an input file this time
 with open('sack.txt', 'r') as sack:
     max_weight = int(sack.readline())
     items = sack.read().splitlines()
@@ -14,6 +16,7 @@ w = [int(item.split(' ')[1]) for item in items]
 # Array of zeroes to hold table
 grid = np.zeros([len(items)+1, max_weight+1], dtype=int)
 
+#dynamic programming using tabulation
 for i in range(1, len(items)+1):
     for j in range(1, max_weight+1):
         # Current item's V + best value from one row up & W squares to the left
