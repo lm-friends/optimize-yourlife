@@ -17,8 +17,8 @@ x[2]: Clothes (10, 20)
 """
 
 # Set matching values/weights for the objects
-    w = [1,4,1]
-    v = [3,5,2]
+w = [1,4,1]
+v = [3,5,2]
 
 # Create the mip solver with the SCIP backend
 solver = pywraplp.Solver.CreateSolver('SCIP')

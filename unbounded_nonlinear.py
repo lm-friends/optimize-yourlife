@@ -11,10 +11,10 @@ as performant at scale? But so far so good...
 
 def objective(x):
     #linear objective
-    # return - ( np.dot(x, v) ) # x[1]*v[1] + ...x[n]*v[n]
+    return - ( np.dot(x, v) ) # x[1]*v[1] + ...x[n]*v[n]
     
     #non linear objective
-    return -( np.dot(x, v) + x[1]*v[1]*x[2]*v[2] )
+    # return -( np.dot(x, v) + x[1]*v[1]*x[2]*v[2] )
 
 def constraint1(x):
     return 20.0 -(np.dot(x, w)) # x[1]*w[1] + ...x[n]*w[n]
@@ -40,7 +40,7 @@ x = solution.x
 print('Final SSE Objective: ' + str(round(objective(x))*(-1)))
 
 #debug:check weight constraint is working. this number should be close to zero or going over weight
-print(str(20-(x[0]*w[0]+x[1]*w[1]+x[2]*w[2]) ))
+print('Overweight: ', str(20-(x[0]*w[0]+x[1]*w[1]+x[2]*w[2]) ))
 
 # print solution
 print('Solution')
